@@ -26,13 +26,13 @@ composer install
 5. Set the values of `DB_DATABASE` to `nobi-test`, `DB_USERNAME` to your database username, and `DB_PASSWORD` to your database password.
 6. Run command `php artisan serve` to start the server.
 
-## Extra Feature Added
+# Extra Feature Added
 
-# Authentication system.
+## Authentication system.
 
 In this application, we use authentication system so only authenticated user can access this application.
 
-# How to use the authentication system
+## How to use the authentication system
 
 1. You have to make new account in Postman request in directory `Nobi Test/v1/auth/register`.
 2. Add the token to Authentication in Postman directory `Nobi Test/v1`. The step is left-click at `Nobi Test/v1`, choose `Authentication` at the top bar, change `Type` to `Bearer Token`, fill the `Token` field with the token response from `Nobi Test/v1/auth/register` or `Nobi Test/v1/auth/login`.
