@@ -7,20 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
--   [Simple, fast routing engine](https://laravel.com/docs/routing).
--   [Powerful dependency injection container](https://laravel.com/docs/container).
--   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
--   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
--   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
--   [Robust background job processing](https://laravel.com/docs/queues).
--   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
 ## How to Deploy from Rizaldi
 
 1. Copy `.env.example` file and rename it to `.env`.
@@ -39,6 +25,32 @@ composer install
 4. Import the database from this directory `/db_dump/nobi-test.sql`.
 5. Set the values of `DB_DATABASE` to `nobi-test`, `DB_USERNAME` to your database username, and `DB_PASSWORD` to your database password.
 6. Run command `php artisan serve` to start the server.
+
+## Extra Feature Added
+
+# Authentication system.
+
+In this application, we use authentication system so only authenticated user can access this application.
+
+# How to use the authentication system
+
+1. You have to make new account in Postman request in directory `Nobi Test/v1/auth/register`.
+2. Add the token to Authentication in Postman directory `Nobi Test/v1`. The step is left-click at `Nobi Test/v1`, choose `Authentication` at the top bar, change `Type` to `Bearer Token`, fill the `Token` field with the token response from `Nobi Test/v1/auth/register` or `Nobi Test/v1/auth/login`.
+3. If you finished the session, use the Postman request in directory `Nobi Test/v1/auth/logout` to invalidate the token so it can't be misused by other people.
+
+## About Laravel
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Learning Laravel
 
