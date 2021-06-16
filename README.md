@@ -42,7 +42,7 @@ In this application, we use authentication system so only authenticated user can
 ## How to use the authentication system
 
 1. You have to make new account in Postman request in directory `Nobi Test/v1/auth/register`.
-2. You can login in from your created account by using request in directory `Nobi Test/v1/auth/login`.
+2. You can login in from your created account by using Postman request in directory `Nobi Test/v1/auth/login`.
 3. Add the token to Authentication in Postman directory `Nobi Test/v1`. The step is left-click at `Nobi Test/v1`, choose `Authentication` at the top bar, change `Type` to `Bearer Token`, fill the `Token` field with the token response from `Nobi Test/v1/auth/register` or `Nobi Test/v1/auth/login`.
 4. If you finished the session, use the Postman request in directory `Nobi Test/v1/auth/logout` to invalidate the token so it can't be misused by other people.
 
