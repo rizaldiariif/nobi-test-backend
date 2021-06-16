@@ -12,20 +12,20 @@
 ## Deploying The Application
 
 1. Copy `.env.example` file and rename it to `.env`.
-2. Generate application key.
-
-```
-php artisan key:generate
-```
-
-3. Install the dependecies.
+2. Import the database from this directory `/db_dump/nobi-test.sql`.
+3. Set the values of `DB_DATABASE` to `nobi-test`, `DB_USERNAME` to your database username, and `DB_PASSWORD` to your database password.
+4. Install the dependecies.
 
 ```
 composer install
 ```
 
-4. Import the database from this directory `/db_dump/nobi-test.sql`.
-5. Set the values of `DB_DATABASE` to `nobi-test`, `DB_USERNAME` to your database username, and `DB_PASSWORD` to your database password.
+5. Generate application key.
+
+```
+php artisan key:generate
+```
+
 6. Run command `php artisan serve` to start the server.
 
 ## Importing the Postman Collection
