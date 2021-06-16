@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## How to Deploy from Rizaldi
+# How to Deploy from Rizaldi
 
 1. Copy `.env.example` file and rename it to `.env`.
 2. Generate application key.
@@ -38,7 +38,7 @@ In this application, we use authentication system so only authenticated user can
 2. Add the token to Authentication in Postman directory `Nobi Test/v1`. The step is left-click at `Nobi Test/v1`, choose `Authentication` at the top bar, change `Type` to `Bearer Token`, fill the `Token` field with the token response from `Nobi Test/v1/auth/register` or `Nobi Test/v1/auth/login`.
 3. If you finished the session, use the Postman request in directory `Nobi Test/v1/auth/logout` to invalidate the token so it can't be misused by other people.
 
-## About Laravel
+# About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
