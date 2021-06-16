@@ -18,7 +18,9 @@ class IBController extends Controller
         $members = Member::all();
 
         if (count($members) == 0) {
-            return NAB::create(['value' => 1]);
+            $created_nab = NAB::create(['value' => 1]);
+
+            return ['nab_amount' => $created_nab->value];
         }
 
         $total_unit = 0;
@@ -30,7 +32,9 @@ class IBController extends Controller
         }
 
         if ($total_unit == 0) {
-            return NAB::create(['value' => 1]);
+            $created_nab = NAB::create(['value' => 1]);
+
+            return ['nab_amount' => $created_nab->value];
         }
 
         $raw_nab = $body['current_balance'] / $total_unit;
